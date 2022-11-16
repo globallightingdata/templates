@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<FormatVersion>1.0.0-rc.1</FormatVersion>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="productImage" contentType="image/png" type="localFileName">product.png</File>
+		</Files>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+			<Description>
+				<Locale language="en">Product description</Locale>
+				<Locale language="de">Produktbeschreibung</Locale>
+			</Description>
+			<TenderText>
+				<Locale language="en">Product tender text</Locale>
+				<Locale language="de">Produkt Ausschreibungstext</Locale>
+			</TenderText>
+			<ProductSeries>
+				<ProductSerie>
+					<Name>
+						<Locale language="en">Produkt family</Locale>
+						<Locale language="de">Produktfamilie</Locale>
+					</Name>
+				</ProductSerie>
+			</ProductSeries>
+			<Pictures>
+				<Image fileId="productImage" imageType="Product Picture" />
+			</Pictures>
+			<LuminaireMaintenance>
+				<Cie97LuminaireType>Open Top Housing (Natural Ventilated)</Cie97LuminaireType>
+				<CieLuminaireMaintenanceFactors>
+					<LuminaireMaintenanceFactor years="1" roomCondition="Normal">0.95</LuminaireMaintenanceFactor>
+					<LuminaireMaintenanceFactor years="2" roomCondition="Normal">0.91</LuminaireMaintenanceFactor>
+				</CieLuminaireMaintenanceFactors>
+				<IesLuminaireLightLossFactors>
+					<LuminaireDirtDepreciation years="1" roomCondition="Very Clean">0.98</LuminaireDirtDepreciation>
+					<LuminaireDirtDepreciation years="2" roomCondition="Very Clean">0.96</LuminaireDirtDepreciation>
+				</IesLuminaireLightLossFactors>
+				<JiegMaintenanceFactors>
+					<LuminaireMaintenanceFactor years="1" roomCondition="Dirty">0.9</LuminaireMaintenanceFactor>
+					<LuminaireMaintenanceFactor years="2" roomCondition="Dirty">0.8</LuminaireMaintenanceFactor>
+				</JiegMaintenanceFactors>
+			</LuminaireMaintenance>
+			<DescriptiveAttributes>
+				<Marketing>
+					<Applications>
+						<Application>Interior: General Areas (Interior)</Application>
+						<Application>Interior: Office</Application>
+					</Applications>
+				</Marketing>
+			</DescriptiveAttributes>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+					<Locale language="de">Variantenname</Locale>
+				</Name>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>

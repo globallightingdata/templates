@@ -1,6 +1,6 @@
 # Overview
 
-GLDF XML templates for learning purposes or an easy start for your own products. Keep in mind that they should only serve as a **starting point**, as in most examples only one specific block is highlighted. Because usually a lot of other data is missing, it is therefore recommended to combine the templates, that are relevant for your own products.
+[GLDF](https://gldf.io) XML templates for learning purposes or an easy start for your own products. Keep in mind that they should only serve as a **starting point**, as in most examples only one specific block is highlighted. Because usually a lot of other data is missing, it is therefore recommended to combine the templates, that are relevant for your own products.
 
 All templates are structured as follows:
 

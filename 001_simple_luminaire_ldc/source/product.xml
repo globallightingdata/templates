@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+	
+	<!-- Manufacturer Metadata/Contact -->
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<FormatVersion>1.0.0-rc.1</FormatVersion>
+	</Header>
+
+	<!-- Building blocks for the luminaire -->
+	<GeneralDefinitions>
+		<Files>
+			<File id="eulumdatFile" contentType="ldc/eulumdat" type="localFileName">eulumdat.ldt</File>
+		</Files>
+		<Photometries>
+			<Photometry id="photometry">
+				<PhotometryFileReference fileId="eulumdatFile"/>
+			</Photometry>
+		</Photometries>
+		<Emitters>
+			<Emitter id="emitter-1">
+				<ChangeableLightEmitter>
+					<PhotometryReference photometryId="photometry" />
+				</ChangeableLightEmitter>
+			</Emitter>
+		</Emitters>
+	</GeneralDefinitions>
+
+	<!-- The definition of the luminaire itself -->
+	<ProductDefinitions>
+		
+		<!-- Global luminaire properties goes here -->
+		<ProductMetaData>
+			<ProductNumber>
+				<Locale language="en">LightNnumber</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+		</ProductMetaData>
+		
+		<!-- Variant-specific luminaire properties goes here -->
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+					<Locale language="de">Variantenname</Locale>
+				</Name>
+				<Geometry>
+					<EmitterReference emitterId="emitter-1" />
+				</Geometry>					
+			</Variant>
+		</Variants>
+		
+	</ProductDefinitions>
+
+</Root>

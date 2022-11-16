@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<FormatVersion>1.0.0-rc.1</FormatVersion>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="eulumdatFile" contentType="ldc/eulumdat" type="localFileName">eulumdat.ldt</File>
+			<File id="spectrumFile" contentType="spectrum/text" type="localFileName">spectrum.txt</File>
+		</Files>
+		<Photometries>
+			<Photometry id="photometry">
+				<PhotometryFileReference fileId="eulumdatFile" />
+			</Photometry>
+		</Photometries>
+		<Spectrums>
+			<Spectrum id="spectrum-1">
+				<SpectrumFileReference fileId="spectrumFile" />
+			</Spectrum>
+			<Spectrum id="spectrum-2">
+				<Intensity wavelength="380">0.01180064</Intensity>
+				<Intensity wavelength="385">0.00788244</Intensity>
+				<!-- Example only, Intensities for wavelength 390-775 goes here -->
+				<Intensity wavelength="780">0.005010302</Intensity>
+			</Spectrum>
+		</Spectrums>
+		<LightSources>
+			<ChangeableLightSource id="lightSource">
+				<Name>
+					<Locale language="en">Incandescent lamp</Locale>
+				</Name>
+				<RatedInputPower>100</RatedInputPower>
+				<SpectrumReference spectrumId="spectrum-1" />
+				<RatedLuminousFlux>400</RatedLuminousFlux>
+			</ChangeableLightSource>
+		</LightSources>
+		<Equipments>
+			<Equipment id="equipment">
+				<LightSourceReference changeableLightSourceId="lightSource" />
+				<RatedInputPower>110</RatedInputPower>
+			</Equipment>
+		</Equipments>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+					<Locale language="de">Variantenname</Locale>
+				</Name>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>
