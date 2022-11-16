@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+	<Header>
+		<Author>DIAL &amp; RELUX</Author>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<FormatVersion>1.0.0-rc.1</FormatVersion>
+		<DefaultLanguage>de</DefaultLanguage>
+		<LicenseKeys>
+			<LicenseKey application="DIALux">GFJO567FHHJ567H</LicenseKey>
+			<LicenseKey application="RELUX">D78GJU567FGD546</LicenseKey>
+		</LicenseKeys>
+		<ReluxMemberId>123</ReluxMemberId>
+		<DIALuxMemberId>456</DIALuxMemberId>
+		<Contact>
+			<Address>
+				<FirstName>John</FirstName>
+				<Name>Doe</Name>
+				<Street>Main Street</Street>
+				<Number>42</Number>
+				<ZIPCode>12345</ZIPCode>
+				<City>Anytown</City>
+				<Country>USA</Country>
+				<Phone>+01 2345 678</Phone>
+				<EMailAddresses>
+					<EMail mailto="sales@example.com"></EMail>
+					<EMail mailto="support@example.com"></EMail>
+				</EMailAddresses>
+				<Websites>
+					<Hyperlink href="https://example.eu" region="Europe and Asia">Website for European/Asian customers</Hyperlink>
+					<Hyperlink href="https://example.jp" language="jp">Japanese language website</Hyperlink>
+					<Hyperlink href="https://example.uk" countryCode="uk">Website for the United Kingdom</Hyperlink>
+				</Websites>
+				<AdditionalInfo>Additional infos can be added here.</AdditionalInfo>
+			</Address>
+			<Address>
+				<Name>Branch office Spain</Name>
+				<EMailAddresses>
+					<EMail mailto="sales@example.es"></EMail>
+				</EMailAddresses>
+			</Address>
+		</Contact>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="eulumdatFile" contentType="ldc/eulumdat" type="localFileName">eulumdat.ldt</File>
+		</Files>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+			</Name>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+				</Name>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>

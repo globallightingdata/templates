@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<FormatVersion>1.0.0-rc.1</FormatVersion>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="sensorFile" contentType="sensor/sensldt" type="localFileName">sens.ldt</File>
+		</Files>
+		<Sensors>
+			<Sensor id="sensor">
+				<SensorFileReference fileId="sensorFile" />
+			</Sensor>
+		</Sensors>
+		<Emitters>
+			<Emitter id="sensorEmitter">
+				<Sensor sensorId="sensor"></Sensor>
+			</Emitter>
+		</Emitters>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+				</Name>
+				<Geometry>
+					<EmitterReference emitterId="sensorEmitter" />
+				</Geometry>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>

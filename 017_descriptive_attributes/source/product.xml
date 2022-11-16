@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<FormatVersion>1.0.0-rc.1</FormatVersion>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="eulumdatFile" contentType="ldc/eulumdat" type="localFileName">eulumdat.ldt</File>
+		</Files>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<ProductNumber>
+				<Locale language="en">LightNnumber</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+			<DescriptiveAttributes>
+				<Mechanical>
+					<ProductSize>
+						<Length>100</Length>
+						<Width>200</Width>
+						<Height>300</Height>
+					</ProductSize>
+					<ProductForm>Sphere</ProductForm>
+					<SealingMaterial>
+						<Locale language="en">Aluminium</Locale>
+						<Locale language="es">Aluminio</Locale>
+					</SealingMaterial>
+					<Adjustabilities>
+						<Adjustability>Orientation</Adjustability>
+						<Adjustability>Fixed</Adjustability>
+					</Adjustabilities>
+					<IKRating>IK03</IKRating>
+					<ProtectiveAreas>
+						<Area>Ball-impact proof</Area>
+						<Area>Drive/Roll-over proof</Area>
+					</ProtectiveAreas>
+					<Weight>5</Weight>
+				</Mechanical>
+				<Electrical>
+					<ClampingRange>
+						<Lower>0.5</Lower>
+						<Upper>1.5</Upper>
+					</ClampingRange>
+					<SwitchingCapacity>100W</SwitchingCapacity>
+					<ElectricalSafetyClass>I</ElectricalSafetyClass>
+					<IngressProtectionIPCode>IP20</IngressProtectionIPCode>
+					<PowerFactor>0.9</PowerFactor>
+					<ConstantLightOutput>true</ConstantLightOutput>
+					<LightDistribution>Symmetric about 90-270 plane</LightDistribution>
+				</Electrical>
+				<Emergency>
+					<DurationTimeAndFlux>
+						<Flux hours="10">50</Flux>
+						<Flux hours="20">10</Flux>
+						<Flux hours="30">0</Flux>
+					</DurationTimeAndFlux>
+					<DedicatedEmergencyLightingType>Guide Light</DedicatedEmergencyLightingType>
+				</Emergency>
+				<Marketing>
+					<ListPrices>
+						<ListPrice currency="EUR">299</ListPrice>
+						<ListPrice currency="USD">319</ListPrice>
+					</ListPrices>
+					<HousingColors>
+						<HousingColor ral="3000">
+							<Locale language="en">Blazing red</Locale>
+							<Locale language="de">Feuerrot</Locale>
+						</HousingColor>
+					</HousingColors>
+					<Markets>
+						<Region>
+							<Locale language="en">Europe</Locale>
+							<Locale language="de">Europa</Locale>
+						</Region>
+						<Region>
+							<Locale language="en">South America</Locale>
+							<Locale language="de">Südamerika</Locale>
+						</Region>
+					</Markets>
+					<Hyperlinks>
+						<Hyperlink href="https://gldf.io" language="en" region="eu">Shop for European customers</Hyperlink>
+					</Hyperlinks>
+					<Designer>GLDF developer</Designer>
+					<ApprovalMarks>
+						<ApprovalMark>GS</ApprovalMark>
+					</ApprovalMarks>
+					<DesignAwards>
+						<DesignAward>Red dot award</DesignAward>
+					</DesignAwards>
+					<Labels>
+						<Label>D</Label>
+						<Label>Handwarm</Label>
+					</Labels>
+					<Applications>
+						<Application>Interior: General Areas (Interior)</Application>
+						<Application>Interior: Office: Office Desks</Application>
+					</Applications>
+				</Marketing>
+				<OperationsAndMaintenance>
+					<UsefulLifeTimes>
+						<UsefulLife>L80B50 50000h 25°C</UsefulLife>
+						<UsefulLife>L70B50 60000h 25°C</UsefulLife>
+					</UsefulLifeTimes>
+					<MedianUsefulLifeTimes>
+						<MedianUsefulLife>L80B50 50000h 25°C</MedianUsefulLife>
+						<MedianUsefulLife>L40B50 75000h 25°C</MedianUsefulLife>
+					</MedianUsefulLifeTimes>
+					<OperatingTemperature>
+						<Lower>-10</Lower>
+						<Upper>50</Upper>
+					</OperatingTemperature>
+					<AmbientTemperature>
+						<Lower>0</Lower>
+						<Upper>30</Upper>
+					</AmbientTemperature>
+					<RatedAmbientTemperature>30</RatedAmbientTemperature>
+					<ATEX>
+						<Directives>
+							<Directive>ATEX</Directive>
+							<Directive>CEC</Directive>
+						</Directives>
+						<Classes>
+							<Class>I</Class>
+							<Class>II</Class>
+						</Classes>
+						<Divisions>
+							<Division>1</Division>
+							<Division>2</Division>
+						</Divisions>
+						<DivisionGroups>
+							<Gas>
+								<Group>A</Group>
+								<Group>B</Group>
+							</Gas>
+							<Dust>
+								<Group>F</Group>
+								<Group>G</Group>
+							</Dust>
+						</DivisionGroups>
+						<Zones>
+							<Gas>
+								<Zone>0</Zone>
+								<Zone>1</Zone>
+							</Gas>
+							<Dust>
+								<Zone>21</Zone>
+								<Zone>22</Zone>
+							</Dust>
+						</Zones>
+						<ZoneGroups>
+							<Gas>
+								<Group>IIC</Group>
+								<Group>IIB + H2</Group>
+							</Gas>
+							<Dust>
+								<Group>IIIC</Group>
+								<Group>IIIB</Group>
+							</Dust>
+						</ZoneGroups>
+						<MaximumSurfaceTemperature>50</MaximumSurfaceTemperature>
+						<TemperatureClasses>
+							<TemperatureClass>T2B</TemperatureClass>
+							<TemperatureClass>T3A</TemperatureClass>
+						</TemperatureClasses>
+						<ExCodes>
+							<ExCode>dc</ExCode>
+							<ExCode>ib</ExCode>
+						</ExCodes>
+						<EquipmentProtectionLevels>
+							<EquipmentProtectionLevel>Ga</EquipmentProtectionLevel>
+							<EquipmentProtectionLevel>Gb</EquipmentProtectionLevel>
+						</EquipmentProtectionLevels>
+						<EquipmentGroups>
+							<EquipmentGroup>I</EquipmentGroup>
+							<EquipmentGroup>II</EquipmentGroup>
+						</EquipmentGroups>
+						<EquipmentCategories>
+							<EquipmentCategory>M1</EquipmentCategory>
+							<EquipmentCategory>1G</EquipmentCategory>
+						</EquipmentCategories>
+						<Atmospheres>
+							<Atmosphere>G</Atmosphere>
+							<Atmosphere>D</Atmosphere>
+						</Atmospheres>
+						<Groups>
+							<Group>II</Group>
+							<Group>IIC</Group>
+						</Groups>
+					</ATEX>
+					<AcousticAbsorptionRates>
+						<AbsorptionRate hertz="700">0.8</AbsorptionRate>
+						<AbsorptionRate hertz="1000">0.7</AbsorptionRate>
+					</AcousticAbsorptionRates>
+				</OperationsAndMaintenance>
+				<CustomProperties>
+					<Property id="GldfWebsite">
+						<Name>
+							<Locale language="en">Website of the GLDF - Global Lighting Data Format</Locale>
+							<Locale language="de">Webseite des GLDF - Global Lighting Data Format</Locale>
+						</Name>
+						<PropertySource>Custom - other</PropertySource>
+						<Value>https://gldf.io</Value>
+					</Property>
+				</CustomProperties>
+			</DescriptiveAttributes>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+				</Name>
+				<DescriptiveAttributes>
+					<Mechanical>
+						<ProductSize>
+							<Length>100</Length>
+							<Width>200</Width>
+							<Height>300</Height>
+						</ProductSize>
+						<ProductForm>Sphere</ProductForm>
+						<SealingMaterial>
+							<Locale language="en">Aluminium</Locale>
+							<Locale language="es">Aluminio</Locale>
+						</SealingMaterial>
+						<Adjustabilities>
+							<Adjustability>Orientation</Adjustability>
+							<Adjustability>Fixed</Adjustability>
+						</Adjustabilities>
+						<IKRating>IK03</IKRating>
+						<ProtectiveAreas>
+							<Area>Ball-impact proof</Area>
+							<Area>Drive/Roll-over proof</Area>
+						</ProtectiveAreas>
+						<Weight>5</Weight>
+					</Mechanical>
+					<Electrical>
+						<ClampingRange>
+							<Lower>0.5</Lower>
+							<Upper>1.5</Upper>
+						</ClampingRange>
+						<SwitchingCapacity>100W</SwitchingCapacity>
+						<ElectricalSafetyClass>I</ElectricalSafetyClass>
+						<IngressProtectionIPCode>IP20</IngressProtectionIPCode>
+						<PowerFactor>0.9</PowerFactor>
+						<ConstantLightOutput>true</ConstantLightOutput>
+						<LightDistribution>Symmetric about 90-270 plane</LightDistribution>
+					</Electrical>
+					<Emergency>
+						<DurationTimeAndFlux>
+							<Flux hours="10">50</Flux>
+							<Flux hours="20">10</Flux>
+							<Flux hours="30">0</Flux>
+						</DurationTimeAndFlux>
+						<DedicatedEmergencyLightingType>Guide Light</DedicatedEmergencyLightingType>
+					</Emergency>
+					<Marketing>
+						<ListPrices>
+							<ListPrice currency="EUR">299</ListPrice>
+							<ListPrice currency="USD">319</ListPrice>
+						</ListPrices>
+						<HousingColors>
+							<HousingColor ral="3000">
+								<Locale language="en">Blazing red</Locale>
+								<Locale language="de">Feuerrot</Locale>
+							</HousingColor>
+						</HousingColors>
+						<Markets>
+							<Region>
+								<Locale language="en">Europe</Locale>
+								<Locale language="de">Europa</Locale>
+							</Region>
+							<Region>
+								<Locale language="en">South America</Locale>
+								<Locale language="de">Südamerika</Locale>
+							</Region>
+						</Markets>
+						<Hyperlinks>
+							<Hyperlink href="https://gldf.io" language="en" region="eu">Shop for European customers</Hyperlink>
+						</Hyperlinks>
+						<Designer>GLDF developer</Designer>
+						<ApprovalMarks>
+							<ApprovalMark>GS</ApprovalMark>
+						</ApprovalMarks>
+						<DesignAwards>
+							<DesignAward>Red dot award</DesignAward>
+						</DesignAwards>
+						<Labels>
+							<Label>D</Label>
+							<Label>Handwarm</Label>
+						</Labels>
+						<Applications>
+							<Application>Interior: General Areas (Interior)</Application>
+							<Application>Interior: Office: Office Desks</Application>
+						</Applications>
+					</Marketing>
+					<OperationsAndMaintenance>
+						<UsefulLifeTimes>
+							<UsefulLife>L80B50 50000h 25°C</UsefulLife>
+							<UsefulLife>L70B50 60000h 25°C</UsefulLife>
+						</UsefulLifeTimes>
+						<MedianUsefulLifeTimes>
+							<MedianUsefulLife>L80B50 50000h 25°C</MedianUsefulLife>
+							<MedianUsefulLife>L40B50 75000h 25°C</MedianUsefulLife>
+						</MedianUsefulLifeTimes>
+						<OperatingTemperature>
+							<Lower>-10</Lower>
+							<Upper>50</Upper>
+						</OperatingTemperature>
+						<AmbientTemperature>
+							<Lower>0</Lower>
+							<Upper>30</Upper>
+						</AmbientTemperature>
+						<RatedAmbientTemperature>30</RatedAmbientTemperature>
+						<ATEX>
+							<Directives>
+								<Directive>ATEX</Directive>
+								<Directive>CEC</Directive>
+							</Directives>
+							<Classes>
+								<Class>I</Class>
+								<Class>II</Class>
+							</Classes>
+							<Divisions>
+								<Division>1</Division>
+								<Division>2</Division>
+							</Divisions>
+							<DivisionGroups>
+								<Gas>
+									<Group>A</Group>
+									<Group>B</Group>
+								</Gas>
+								<Dust>
+									<Group>F</Group>
+									<Group>G</Group>
+								</Dust>
+							</DivisionGroups>
+							<Zones>
+								<Gas>
+									<Zone>0</Zone>
+									<Zone>1</Zone>
+								</Gas>
+								<Dust>
+									<Zone>21</Zone>
+									<Zone>22</Zone>
+								</Dust>
+							</Zones>
+							<ZoneGroups>
+								<Gas>
+									<Group>IIC</Group>
+									<Group>IIB + H2</Group>
+								</Gas>
+								<Dust>
+									<Group>IIIC</Group>
+									<Group>IIIB</Group>
+								</Dust>
+							</ZoneGroups>
+							<MaximumSurfaceTemperature>50</MaximumSurfaceTemperature>
+							<TemperatureClasses>
+								<TemperatureClass>T2B</TemperatureClass>
+								<TemperatureClass>T3A</TemperatureClass>
+							</TemperatureClasses>
+							<ExCodes>
+								<ExCode>dc</ExCode>
+								<ExCode>ib</ExCode>
+							</ExCodes>
+							<EquipmentProtectionLevels>
+								<EquipmentProtectionLevel>Ga</EquipmentProtectionLevel>
+								<EquipmentProtectionLevel>Gb</EquipmentProtectionLevel>
+							</EquipmentProtectionLevels>
+							<EquipmentGroups>
+								<EquipmentGroup>I</EquipmentGroup>
+								<EquipmentGroup>II</EquipmentGroup>
+							</EquipmentGroups>
+							<EquipmentCategories>
+								<EquipmentCategory>M1</EquipmentCategory>
+								<EquipmentCategory>1G</EquipmentCategory>
+							</EquipmentCategories>
+							<Atmospheres>
+								<Atmosphere>G</Atmosphere>
+								<Atmosphere>D</Atmosphere>
+							</Atmospheres>
+							<Groups>
+								<Group>II</Group>
+								<Group>IIC</Group>
+							</Groups>
+						</ATEX>
+						<AcousticAbsorptionRates>
+							<AbsorptionRate hertz="700">0.8</AbsorptionRate>
+							<AbsorptionRate hertz="1000">0.7</AbsorptionRate>
+						</AcousticAbsorptionRates>
+					</OperationsAndMaintenance>
+					<CustomProperties>
+						<Property id="GldfWebsite">
+							<Name>
+								<Locale language="en">Website of the GLDF - Global Lighting Data Format</Locale>
+								<Locale language="de">Webseite des GLDF - Global Lighting Data Format</Locale>
+							</Name>
+							<PropertySource>Custom - other</PropertySource>
+							<Value>https://gldf.io</Value>
+						</Property>
+					</CustomProperties>
+				</DescriptiveAttributes>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>

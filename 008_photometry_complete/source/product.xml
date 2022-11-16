@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<FormatVersion>1.0.0-rc.1</FormatVersion>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="eulumdatFile" contentType="ldc/eulumdat" type="localFileName">eulumdat.ldt</File>
+		</Files>
+		<Photometries>
+			<Photometry id="photometry">
+				<PhotometryFileReference fileId="eulumdatFile" />
+				<DescriptivePhotometry>
+					<LuminaireLuminance>123</LuminaireLuminance>
+					<LightOutputRatio>0.5</LightOutputRatio>
+					<LuminousEfficacy>0.5</LuminousEfficacy>
+					<DownwardFluxFraction>0.5</DownwardFluxFraction>
+					<DownwardLightOutputRatio>0.5</DownwardLightOutputRatio>
+					<UpwardLightOutputRatio>0.5</UpwardLightOutputRatio>
+					<TenthPeakDivergence>
+						<C0-C180>10</C0-C180>
+						<C90-C270>20</C90-C270>
+					</TenthPeakDivergence>
+					<HalfPeakDivergence>
+						<C0-C180>10</C0-C180>
+						<C90-C270>20</C90-C270>
+					</HalfPeakDivergence>
+					<PhotometricCode>930/359</PhotometricCode>
+					<CIE-FluxCode>40 71 93 54 100</CIE-FluxCode>
+					<CutOffAngle>45</CutOffAngle>
+					<UGR-4H8H-70-50-20-LQ>
+						<X>11.4</X>
+						<Y>11.7</Y>
+					</UGR-4H8H-70-50-20-LQ>
+					<IESNA-LightDistributionDefinition>III</IESNA-LightDistributionDefinition>
+					<LightDistributionBUG-Rating>B1-U0-G1</LightDistributionBUG-Rating>
+				</DescriptivePhotometry>
+			</Photometry>
+		</Photometries>
+		<Emitters>
+			<Emitter id="emitter">
+				<ChangeableLightEmitter>
+					<PhotometryReference photometryId="photometry" />
+				</ChangeableLightEmitter>
+			</Emitter>
+		</Emitters>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+			</Name>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+				</Name>
+				<Geometry>
+					<EmitterReference emitterId="emitter" />
+				</Geometry>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>

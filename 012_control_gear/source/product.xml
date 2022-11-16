@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<FormatVersion>1.0.0-rc.1</FormatVersion>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="eulumdatFile" contentType="ldc/eulumdat" type="localFileName">eulumdat.ldt</File>
+		</Files>
+		<Photometries>
+			<Photometry id="photometry">
+				<PhotometryFileReference fileId="eulumdatFile" />
+			</Photometry>
+		</Photometries>
+		<LightSources>
+			<ChangeableLightSource id="lightSource1">
+				<Name>
+					<Locale language="en">Incandescent lamp</Locale>
+				</Name>
+				<RatedInputPower>100</RatedInputPower>
+				<RatedLuminousFlux>800</RatedLuminousFlux>
+			</ChangeableLightSource>
+		</LightSources>
+		<ControlGears>
+			<ControlGear id="controlGear">
+				<Name>
+					<Locale language="en">Control gear name</Locale>
+					<Locale language="de">Name des Vorschaltsgeräts</Locale>
+				</Name>
+				<Description>
+					<Locale language="en">Control gear description</Locale>
+					<Locale language="de">Beschreibung des Vorschaltsgeräts</Locale>
+				</Description>
+				<NominalVoltage>
+					<FixedVoltage>230</FixedVoltage>
+				</NominalVoltage>
+				<StandbyPower>2</StandbyPower>
+				<ConstantLightOutputStartPower>15</ConstantLightOutputStartPower>
+				<ConstantLightOutputEndPower>10</ConstantLightOutputEndPower>
+				<PowerConsumptionControls>1</PowerConsumptionControls>
+				<Dimmable>true</Dimmable>
+				<ColorControllable>false</ColorControllable>
+				<Interfaces>
+					<Interface>KNX</Interface>
+					<Interface>WiFi</Interface>
+				</Interfaces>
+				<EnergyLabels>
+					<EnergyLabel region="EU">B</EnergyLabel>
+				</EnergyLabels>
+			</ControlGear>
+		</ControlGears>
+		<Equipments>
+			<Equipment id="equipment">
+				<LightSourceReference changeableLightSourceId="lightSource1" />
+				<RatedInputPower>110</RatedInputPower>
+			</Equipment>
+		</Equipments>
+		<Emitters>
+			<Emitter id="emitter">
+				<ChangeableLightEmitter>
+					<PhotometryReference photometryId="photometry" />
+					<EquipmentReference equipmentId="equipment" />
+				</ChangeableLightEmitter>
+			</Emitter>
+		</Emitters>
+	</GeneralDefinitions>
+
+	<ProductDefinitions>
+		<ProductMetaData>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+					<Locale language="de">Variantenname</Locale>
+				</Name>
+				<Geometry>
+					<EmitterReference emitterId="emitter" />
+				</Geometry>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>
