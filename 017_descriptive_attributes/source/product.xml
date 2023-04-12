@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
-<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.1/gldf.xsd">
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.2/gldf.xsd">
 	<Header>
 		<Manufacturer>Manufacturer XY</Manufacturer>
-		<CreationTimeCode>2021-03-29T14:30:00Z</CreationTimeCode>
+		<FormatVersion major="1" minor="0" pre-release="2"></FormatVersion>
 		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
-		<FormatVersion>1.0.0-rc.1</FormatVersion>
+		<GldfCreationTimeCode>2023-04-12T20:00:00Z</GldfCreationTimeCode>
+		<UniqueGldfId>INSERT GUID HERE - SHOULD BE ALWAYS UNIQUE</UniqueGldfId>
 	</Header>
 	<GeneralDefinitions>
 		<Files>
@@ -13,6 +15,7 @@
 	</GeneralDefinitions>
 	<ProductDefinitions>
 		<ProductMetaData>
+			<UniqueProductId>INSERT GUID HERE - SHOULD BE ONLY UNIQUE AMONG DIFFERENT PRODUCTS</UniqueProductId>
 			<ProductNumber>
 				<Locale language="en">LightNnumber</Locale>
 				<Locale language="de">Produktnummer</Locale>
