@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.3/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<FormatVersion major="1" minor="0" pre-release="3"></FormatVersion>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<GldfCreationTimeCode>2023-04-12T20:00:00Z</GldfCreationTimeCode>
+		<UniqueGldfId>INSERT GUID HERE - SHOULD BE ALWAYS UNIQUE</UniqueGldfId>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="eulumdatFile" contentType="ldc/eulumdat" type="localFileName">eulumdat.ldt</File>
+			<File id="variantImage" contentType="image/png" type="localFileName">variant.png</File>
+			<File id="iconImage" contentType="symbol/svg" type="localFileName">icon.svg</File>
+		</Files>
+		<Photometries>
+			<Photometry id="photometry">
+				<PhotometryFileReference fileId="eulumdatFile" />
+			</Photometry>
+		</Photometries>
+		<Emitters>
+			<Emitter id="emitter-1">
+				<ChangeableLightEmitter>
+					<PhotometryReference photometryId="photometry" />
+				</ChangeableLightEmitter>
+			</Emitter>
+		</Emitters>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<UniqueProductId>INSERT GUID HERE - SHOULD BE ONLY UNIQUE AMONG DIFFERENT PRODUCTS</UniqueProductId>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+					<Locale language="de">Variantenname</Locale>
+				</Name>
+				<Description>
+					<Locale language="en">Variant description</Locale>
+					<Locale language="de">Variantenbeschreibung</Locale>
+				</Description>
+				<TenderText>
+					<Locale language="en">Variant tender text</Locale>
+					<Locale language="de">Varianten Ausschreibungstext</Locale>
+				</TenderText>
+				<GTIN>12345678</GTIN>
+				<Mountings>
+					<Ceiling>
+						<Pendant pendantLength="1500" />
+					</Ceiling>
+				</Mountings>
+				<Geometry>
+					<EmitterReference emitterId="emitter-1" />
+				</Geometry>
+				<ProductSeries>
+					<ProductSerie id="uniqueFamilyId">
+						<Name>
+							<Locale language="en">Product series</Locale>
+							<Locale language="de">Produktserie</Locale>
+						</Name>
+					</ProductSerie>
+				</ProductSeries>
+				<Pictures>
+					<Image fileId="variantImage" imageType="Application Picture" />
+				</Pictures>
+				<Symbol fileId="iconImage" />
+				<DescriptiveAttributes>
+					<Marketing>
+						<Hyperlinks>
+							<Hyperlink href="https://gldf.io">Gldf.io</Hyperlink>
+						</Hyperlinks>
+					</Marketing>
+				</DescriptiveAttributes>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>

@@ -81,40 +81,44 @@ Template with mandatory only elements of a `ChangeableLightSource`. As well as a
 
 Template with a `ChangeableLightSource` element containing all possible elements. As well as an `Equipment`, which is used to reference the `ChangeableLightSource` inside the luminaires `Variant`.
 
+### `011_lightsource_multichannel`
+
+Template with a `MultiChannelLightSource` element, referenced by a `MultiChannelLightEmitter`.
+
 ## Spectrum
 
-### `011_spectrum`
+### `012_spectrum`
 
 Luminaire with a `Spectrum` element. Note in particular how the `Spectrum` is referenced inside a `LightSource`. Which in turn is referenced through an `Equipment` element. And how it is possible to define a `Spectrum` as a file reference (spectrum1) and inside the XML itself (spectrum2).
 
 ## ControlGears
 
-### `012_control_gear`
+### `013_control_gear`
 
 Luminaire with a complete `ControlGear` element containing all possible childs elements. As well as an `Equipment` referencing the `ControlGear` through `ControlGearReference`.
 
 ## ProductMetadata
 
-### `013_product_metadata`
+### `014_product_metadata`
 
 Luminaire with a complete `ProductMetaData` element containing all possible child elements. `ProductMetaData` is intended for global properties of a product.
 
 ## Variants
 
-### `014_variant_simple_lightemitter`
+### `015_variant_simple_lightemitter`
 
 Luminaire with a complete `Variant` element.
 
-### `015_variant_simple_sensoremitter`
+### `016_variant_simple_sensoremitter`
 
 Luminaire with a complete `Variant` element containing a reference to a `SensorEmitter`.
 
-### `016_variant_geometry_reference`
+### `017_variant_geometry_reference`
 
 Luminaire with a complete `Variant` element containing all possible elements, a l3d geometry and a sensor.
 
 ## DescriptiveAttributes
 
-### `017_descriptive_attributes`
+### `018_descriptive_attributes`
 
 Luminaire with a complete `DescriptiveAttributes` element inside `ProductMetadata` and `Variant`. `DescriptiveAttributes` values inside a `Variant` will override the global defined values in `ProductMetadata`.

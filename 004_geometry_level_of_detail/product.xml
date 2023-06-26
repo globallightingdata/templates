@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.3/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<FormatVersion major="1" minor="0" pre-release="3"></FormatVersion>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<GldfCreationTimeCode>2023-04-12T20:00:00Z</GldfCreationTimeCode>
+		<UniqueGldfId>INSERT GUID HERE - SHOULD BE ALWAYS UNIQUE</UniqueGldfId>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="eulumdatFile" contentType="ldc/eulumdat" type="localFileName">eulumdat.ldt</File>
+			<File id="lowDetailGeometryFile" contentType="geo/l3d" type="localFileName">low.l3d</File>
+			<File id="mediumDetailGeometryFile" contentType="geo/l3d" type="localFileName">medium.l3d</File>
+			<File id="highDetailGeometryFile" contentType="geo/l3d" type="localFileName">high.l3d</File>
+		</Files>
+		<Photometries>
+			<Photometry id="photometry-1">
+				<PhotometryFileReference fileId="eulumdatFile" />
+			</Photometry>
+		</Photometries>
+		<Emitters>
+			<Emitter id="emitter-1">
+				<ChangeableLightEmitter>
+					<PhotometryReference photometryId="photometry-1" />
+				</ChangeableLightEmitter>
+			</Emitter>
+		</Emitters>
+		<Geometries>
+			<ModelGeometry id="geometry-1">
+				<GeometryFileReference fileId="lowDetailGeometryFile" levelOfDetail="Low" />
+				<GeometryFileReference fileId="mediumDetailGeometryFile" levelOfDetail="Medium" />
+				<GeometryFileReference fileId="highDetailGeometryFile" levelOfDetail="High" />
+			</ModelGeometry>
+		</Geometries>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<UniqueProductId>INSERT GUID HERE - SHOULD BE ONLY UNIQUE AMONG DIFFERENT PRODUCTS</UniqueProductId>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant-1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+					<Locale language="de">Variantenname</Locale>
+				</Name>
+				<Geometry>
+					<ModelGeometryReference geometryId="geometry-1">
+						<EmitterReference emitterId="emitter-1">
+							<EmitterObjectExternalName>leo</EmitterObjectExternalName>
+						</EmitterReference>
+					</ModelGeometryReference>
+				</Geometry>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>

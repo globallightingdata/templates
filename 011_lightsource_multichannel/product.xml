@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://gldf.io/xsd/gldf/1.0.0-rc.3/gldf.xsd">
+	<Header>
+		<Manufacturer>Manufacturer XY</Manufacturer>
+		<FormatVersion major="1" minor="0" pre-release="3"></FormatVersion>
+		<CreatedWithApplication>Visual Studio Code</CreatedWithApplication>
+		<GldfCreationTimeCode>2023-04-12T20:00:00Z</GldfCreationTimeCode>
+		<UniqueGldfId>INSERT GUID HERE - SHOULD BE ALWAYS UNIQUE</UniqueGldfId>
+	</Header>
+	<GeneralDefinitions>
+		<Files>
+			<File id="photometryRedFile" contentType="ldc/eulumdat" type="url">
+				http://example.org/photometryRed.ldt</File>
+			<File id="photometryGreenFile" contentType="ldc/eulumdat" type="url">
+				http://example.org/photometryGreen.ldt</File>
+			<File id="photometryBlueFile" contentType="ldc/eulumdat" type="url">
+				http://example.org/photometryBlue.ldt</File>
+			<File id="spectrumRedFile" contentType="spectrum/text" type="url">
+				http://example.org/spectrumRed.txt</File>
+			<File id="spectrumGreenFile" contentType="spectrum/text" type="url">
+				http://example.org/spectrumGreen.txt</File>
+			<File id="spectrumBlueFile" contentType="spectrum/text" type="url">
+				http://example.org/spectrumBlue.txt</File>
+			<File id="lightSourceImage" contentType="image/jpg" type="url">
+				http://example.org/image.jpg</File>
+		</Files>
+		<Photometries>
+			<Photometry id="photometryRed">
+				<PhotometryFileReference fileId="photometryRedFile" />
+			</Photometry>
+			<Photometry id="photometryGreen">
+				<PhotometryFileReference fileId="photometryGreenFile" />
+			</Photometry>
+			<Photometry id="photometryBlue">
+				<PhotometryFileReference fileId="photometryBlueFile" />
+			</Photometry>
+		</Photometries>
+		<Spectrums>
+			<Spectrum id="spectrumRed">
+				<SpectrumFileReference fileId="spectrumRedFile" />
+			</Spectrum>
+			<Spectrum id="spectrumGreen">
+				<SpectrumFileReference fileId="spectrumGreenFile" />
+			</Spectrum>
+			<Spectrum id="spectrumBlue">
+				<SpectrumFileReference fileId="spectrumBlueFile" />
+			</Spectrum>
+		</Spectrums>
+		<LightSources>
+			<MultiChannelLightSource id="multiChannelLightSource">
+				<Name>
+					<Locale language="en">RGB MultiChannel</Locale>
+				</Name>
+				<RatedInputPower>50</RatedInputPower>
+				<LightSourceImages>
+					<Image fileId="lightSourceImage" imageType="Product Picture" />
+				</LightSourceImages>
+				<Channels>
+					<Channel type="Red">
+						<DisplayName>
+							<Locale language="en">Red</Locale>
+						</DisplayName>
+						<SpectrumReference spectrumId="spectrumRed" />
+						<PhotometryReference photometryId="photometryRed" />
+						<RatedLuminousFlux>150</RatedLuminousFlux>
+					</Channel>
+					<Channel type="Green">
+						<DisplayName>
+							<Locale language="en">Green</Locale>
+						</DisplayName>
+						<SpectrumReference spectrumId="spectrumGreen" />
+						<PhotometryReference photometryId="photometryGreen" />
+						<RatedLuminousFlux>150</RatedLuminousFlux>
+					</Channel>
+					<Channel type="Blue">
+						<DisplayName>
+							<Locale language="en">Blue</Locale>
+						</DisplayName>
+						<SpectrumReference spectrumId="spectrumBlue" />
+						<PhotometryReference photometryId="photometryBlue" />
+						<RatedLuminousFlux>150</RatedLuminousFlux>
+					</Channel>
+				</Channels>
+			</MultiChannelLightSource>
+		</LightSources>
+		<ControlGears>
+			<ControlGear id="controlGear">
+				<Name>
+					<Locale language="en">Electronic ballast</Locale>
+				</Name>
+				<NominalVoltage>
+					<VoltageRange>
+						<Min>220</Min>
+						<Max>230</Max>
+					</VoltageRange>
+				</NominalVoltage>
+				<StandbyPower>5</StandbyPower>
+				<Dimmable>true</Dimmable>
+				<ColorControllable>true</ColorControllable>
+			</ControlGear>
+		</ControlGears>
+		<Emitters>
+			<Emitter id="emitter-1">
+				<MultiChannelLightEmitter>
+					<LightSourceReference multiChannelLightSourceId="multiChannelLightSource" />
+					<ControlGearReference controlGearId="controlGear" />
+				</MultiChannelLightEmitter>
+			</Emitter>
+		</Emitters>
+	</GeneralDefinitions>
+	<ProductDefinitions>
+		<ProductMetaData>
+			<UniqueProductId>INSERT GUID HERE - SHOULD BE ONLY UNIQUE AMONG DIFFERENT PRODUCTS</UniqueProductId>
+			<ProductNumber>
+				<Locale language="en">Product number</Locale>
+				<Locale language="de">Produktnummer</Locale>
+			</ProductNumber>
+			<Name>
+				<Locale language="en">Product name</Locale>
+				<Locale language="de">Produktname</Locale>
+			</Name>
+		</ProductMetaData>
+		<Variants>
+			<Variant id="variant1">
+				<Name>
+					<Locale language="en">Variant name</Locale>
+					<Locale language="de">Variantenname</Locale>
+				</Name>
+				<Geometry>
+					<EmitterReference emitterId="emitter-1" />
+				</Geometry>
+			</Variant>
+		</Variants>
+	</ProductDefinitions>
+</Root>
